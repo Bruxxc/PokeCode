@@ -1,0 +1,129 @@
+.poke_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    width: 500px;
+    row-gap: 10px;
+    height: 600px;
+    overflow-y: auto;
+}
+
+.poke_carta{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 4px black;
+    display: grid;
+    justify-items: center;
+    font-weight: 900;
+    &:hover{
+        box-shadow:0px 0px 4px goldenrod;
+    }
+}
+
+.poke_img_container{
+    background-color: rgb(224, 219, 219);
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.poke_name{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    border-top:solid rgb(224, 219, 219) 1px;
+    border-bottom:solid rgb(224, 219, 219) 1px;
+    background-color: #c5c590;
+}
+
+.poke_types{
+    width: 100%;
+    display: flex;
+    column-gap: 5px;
+    justify-content: center;
+    background-color: #bdb8b8;
+}
+
+.type_container{
+    width: 56px;
+    border-radius: 15%;
+    color:aliceblue;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.type_fire{
+    background-color: rgb(255, 136, 0);
+}
+
+.type_grass{
+    background-color:greenyellow;
+    color:rgb(194, 195, 201);
+}
+
+.type_water{
+    background-color:rgb(8, 133, 190);
+}
+
+.type_normal{
+    background-color:#A8A878;
+}
+
+.type_poison{
+    background-color:rgb(185, 37, 185);
+}
+
+.type_bug{
+    background-color:green;
+}
+
+.type_flying{
+    background-color:blanchedalmond;
+    color:rgb(194, 195, 201);
+}
+
+.type_ground{
+    background-color:#E0C068;
+}
+
+.type_electric{
+    background-color:rgb(230, 230, 24);
+    color:rgb(194, 195, 201);
+}
+
+.type_ghost{
+    background-color:purple;
+}
+
+.type_fairy{
+    background-color:pink;
+}
+
+.type_ice{
+    background-color:rgb(10, 204, 204);
+}
+
+.type_psychic{
+    background-color:deeppink;
+}
+
+.type_steel{
+    background-color:rgb(177, 172, 172);
+}
+
+.type_dragon{
+    background-color:#7038F8;
+}
+
+.type_fighting{
+    background-color:#C03028;
+}
+
+.type_dark{
+    background-color:#4b3c32;
+}
+
+.type_rock{
+    background-color:darkgoldenrod;
+}
