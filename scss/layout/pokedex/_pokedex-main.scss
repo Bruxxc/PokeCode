@@ -1,3 +1,7 @@
+.article{
+    border: solid brown 3px;
+}
+
 .poke_cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -6,6 +10,118 @@
     row-gap: 10px;
     height: 600px;
     overflow-y: auto;
+}
+
+.open_card_blur{
+    position:absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.open_card{
+    height: 520px;
+    width: 400px;
+    background-color: #A8A878;
+    border:solid rgb(0, 0, 0) 1px;
+}
+
+.boton_cerrar_carta{
+    justify-self: end;
+    align-self: start;
+}
+
+
+.open_card_img_container{
+    width: 100%;
+    height: 200px;
+    background-color: #e9e1e1;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.open_card_name{
+    height: 50px;
+    background-color: #e09e68;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.open_card_types{
+    height: 50px;
+    background-color: #bdb8b8;
+    display: grid;
+    justify-items: center;
+
+}
+
+.open_card_stats{
+    list-style-type: none;
+    display: grid;
+}
+
+.base_stats{
+    justify-self: center;
+}
+
+.open_card_substat{
+    height: 33px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.open_card_stat_name{
+    display: grid;
+    height: 90%;
+    justify-items: center;
+    align-items: center;
+    background-color: #e08e68;
+    color:aliceblue;
+}
+
+.stat_bar{
+    background-color: cyan;
+}
+
+.open_card_stat_value_bar{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    border:solid white;
+    justify-self: center;
+}
+
+.open_card_stat_value_number{
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+}
+
+.open_card_types{
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.type_container_in_card{
+    height: 30px;
+    width: 100px;
+    border-radius: 15%;
+    font-size: larger;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .poke_carta{
@@ -17,6 +133,7 @@
     font-weight: 900;
     &:hover{
         box-shadow:0px 0px 4px goldenrod;
+        cursor: pointer;
     }
 }
 
@@ -34,6 +151,11 @@
     border-top:solid rgb(224, 219, 219) 1px;
     border-bottom:solid rgb(224, 219, 219) 1px;
     background-color: #c5c590;
+}
+
+.poke_stats{
+    position: absolute;
+    display: none;
 }
 
 .poke_types{

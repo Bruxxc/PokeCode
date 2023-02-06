@@ -1,23 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Pokédex</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <section>
-            <article>
-                <div class="poke_cards">
+      <section>
+        <article>
+          <div class="open_card_blur">
+            <div class="open_card slide-fwd-center ">
+              <div class="open_card_img_container">
+                <button class="boton_cerrar_carta">X</button>
+                <div class="open_card_img"></div>
+              </div>
 
-                </div>
-            </article>
-        </section>
+              <p class="open_card_name"></p>
+              <div class="open_card_types"></div>
+              <ul class="open_card_stats">
+                <p class="base_stats">BASE STATS</p>
+                <li class="open_card_substat">
+                  <p class="open_card_stat_name">HP</p>
+                  <div class="open_card_stat_value_bar">
+                    <div class="bar_hp stat_bar"></div>
+                    <p class="open_card_stat_hp open_card_stat_value_number"></p>
+                  </div>
+                </li>
+
+                <li class="open_card_substat">
+                  <p class="open_card_stat_name">ATTACK</p>
+                  <div class="open_card_stat_value_bar">
+                    <div class="bar_attack stat_bar"></div>
+                    <p class="open_card_stat_attack open_card_stat_value_number"></p>
+                  </div>
+                </li>
+
+                <li class="open_card_substat">
+                  <p class="open_card_stat_name">DEFENSE</p>
+                  <div class="open_card_stat_value_bar">
+                    <div class="bar_defense stat_bar"></div>
+                    <p class="open_card_stat_defense open_card_stat_value_number"></p>
+                  </div>
+                </li>
+
+                <li class="open_card_substat">
+                  <p class="open_card_stat_name">SPECIAL-ATTACK</p>
+                  <div class="open_card_stat_value_bar">
+                    <div class="bar_spattack stat_bar"></div>
+                    <p class="open_card_stat_spattack open_card_stat_value_number"></p>
+                  </div>
+                </li>
+
+                <li class="open_card_substat">
+                  <p class="open_card_stat_name">SPECIAL-DEFENSE</p>
+                  <div class="open_card_stat_value_bar">
+                    <div class="bar_spdefense stat_bar"></div>
+                    <p class="open_card_stat_spdefense open_card_stat_value_number"></p>
+                  </div>
+                </li>
+
+                <li class="open_card_substat">
+                  <p class="open_card_stat_name">SPEED</p>
+                  <div class="open_card_stat_value_bar">
+                    <div class="bar_speed stat_bar"></div>
+                    <p class="open_card_stat_speed open_card_stat_value_number"></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="poke_cards"></div>
+        </article>
+      </section>
     </main>
-</body>
+  </body>
 
-<script src="../js/pokedex.js"></script>
+  <script src="../js/pokedex.js"></script>
 </html>
